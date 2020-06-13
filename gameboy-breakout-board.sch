@@ -104,7 +104,7 @@ L Connector_Generic:Conn_02x16_Counter_Clockwise J2
 U 1 1 5EDECC0B
 P 3800 2500
 F 0 "J2" H 3850 3417 50  0000 C CNN
-F 1 "header" H 3850 3326 50  0000 C CNN
+F 1 "Header" H 3850 3326 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x16_P2.54mm_Vertical" H 3800 2500 50  0001 C CNN
 F 3 "~" H 3800 2500 50  0001 C CNN
 	1    3800 2500
