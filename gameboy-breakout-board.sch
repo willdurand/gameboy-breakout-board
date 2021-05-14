@@ -4,25 +4,15 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "GameBoy breakout board v1"
-Date "2020-06-13"
-Rev "1"
+Title "GameBoy card slot breakout board"
+Date "2021-05-14"
+Rev "2"
 Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 6500 1750 2    50   ~ 0
-PHI
-Text Label 6500 1850 2    50   ~ 0
-~WR
-Text Label 6500 1950 2    50   ~ 0
-~RD
-Text Label 6500 2050 2    50   ~ 0
-~CS
-Text Label 6500 2150 2    50   ~ 0
-A0
 Text Label 6500 2250 2    50   ~ 0
 A1
 Text Label 6500 2350 2    50   ~ 0
@@ -148,20 +138,6 @@ Text Label 3600 1900 2    50   ~ 0
 PHI
 Text Label 6500 4750 2    50   ~ 0
 GND
-$Comp
-L willdurand_connector:GB_GBC_1x32 J1
-U 1 1 5EDEAF95
-P 6900 3300
-F 0 "J1" H 7130 3400 50  0000 L CNN
-F 1 "GB_GBC_1x32" H 7130 3309 50  0000 L CNN
-F 2 "willdurand_connector:GB_GBC_1x32" H 7550 2700 50  0001 C CNN
-F 3 "https://www.aliexpress.com/item/32832493101.html" H 7550 2700 50  0001 C CNN
-F 4 "GNI172" H 6850 1550 50  0001 C CNN "Model number"
-	1    6900 3300
-	1    0    0    -1  
-$EndComp
-Text Label 6500 1650 2    50   ~ 0
-VCC
 Text Label 3600 1800 2    50   ~ 0
 VCC
 Wire Wire Line
@@ -190,4 +166,28 @@ F 3 "~" H 4300 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 1800 4100 1800
+Text Label 6500 1650 2    50   ~ 0
+VCC
+$Comp
+L willdurand_connector:GB_GBC_1x32 J1
+U 1 1 5EDEAF95
+P 6900 3300
+F 0 "J1" H 7130 3400 50  0000 L CNN
+F 1 "GB_GBC_1x32" H 7130 3309 50  0000 L CNN
+F 2 "willdurand_connector:GB_GBC_1x32" H 7550 2700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32832493101.html" H 7550 2700 50  0001 C CNN
+F 4 "GNI172" H 6850 1550 50  0001 C CNN "Model number"
+	1    6900 3300
+	1    0    0    -1  
+$EndComp
+Text Label 6500 2150 2    50   ~ 0
+A0
+Text Label 6500 2050 2    50   ~ 0
+~CS
+Text Label 6500 1950 2    50   ~ 0
+~RD
+Text Label 6500 1850 2    50   ~ 0
+~WR
+Text Label 6500 1750 2    50   ~ 0
+PHI
 $EndSCHEMATC

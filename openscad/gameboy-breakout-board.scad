@@ -1,3 +1,5 @@
+include </Users/william/projects/openscad/nutsnbolts/cyl_head_bolt.scad>
+
 length = 62;
 radius = 2;
 width = 38;
@@ -27,4 +29,17 @@ module base() {
   }
 }
 
-base();
+difference() {
+  h = 3;
+  linear_extrude(height=h)
+    base();
+
+  translate([base_length / 2, base_width / 2, 1.5])
+    hole_through("M2.5", l=2);
+  translate([-base_length / 2, base_width / 2, 1.5])
+    hole_through("M2.5", l=2);
+  translate([-base_length / 2, -base_width / 2, 1.5])
+    hole_through("M2.5", l=2);
+  translate([base_length / 2, -base_width / 2, 1.5])
+    hole_through("M2.5", l=2);
+}

@@ -16,6 +16,7 @@ _autosave-*
 *-rescue.lib
 *-save.pro
 *-save.kicad_pcb
+*-bak
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -40,3 +41,4 @@ out/
 # End of https://www.toptal.com/developers/gitignore/api/kicad
 
 fp-info-cache
+sym-lib-table
