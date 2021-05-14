@@ -1,10 +1,11 @@
 # gameboy-breakout-board
 
-A simple breakout board for [this GameBoy connector](https://www.aliexpress.com/item/32832493101.html). The board has been designed to be manufactured by JLCPCB.
-
 :warning: This board hasn't been tested yet.
 
+A simple breakout board for [this GameBoy connector](https://www.aliexpress.com/item/32832493101.html). The board has been designed to be manufactured by JLCPCB.
+
 ![](./docs/gameboy-breakout-board.png)
+![](./docs/gameboy-breakout-board-2.png)
 
 ## Bill of Materials
 
